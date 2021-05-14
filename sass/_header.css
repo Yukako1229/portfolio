@@ -1,0 +1,32 @@
+@charset "UTF-8";
+header {
+  position: fixed;
+  background-color: darkgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 2px 3px #808080;
+  width: 100%;
+  z-index: 100;
+}
+
+h1 {
+  font-family: 'Brush Script MT',YuGothic,'Yu Gothic','ＭＳ ゴシック',sans-serif;
+  font-size: 5rem;
+  padding: 10px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  font-size: 4.5rem;
+}
+
+.menu ul li {
+  padding-right: 10px;
+}
+
+.menu-hbg {
+  display: none;
+}

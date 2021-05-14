@@ -1,0 +1,377 @@
+@charset "UTF-8";
+.box {
+  background: red;
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 959px) {
+  .box {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    height: 300px;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  width: 100%;
+}
+
+.title {
+  color: #666666;
+  padding: 50px 0;
+  font-size: 40px;
+}
+
+.inner {
+  width: 80%;
+  margin: 0px auto;
+}
+
+li {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  background-color: #F067A6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 2px 3px #808080;
+  width: 100%;
+  z-index: 100;
+  padding: 0 40px;
+}
+
+h1 {
+  font-family: 'Brush Script MT',YuGothic,'Yu Gothic','ＭＳ ゴシック',sans-serif;
+  font-size: 5rem;
+  padding: 10px;
+}
+
+.pc-menu ul {
+  display: flex;
+  align-items: center;
+  font-size: 4.5rem;
+}
+
+.pc-menu ul li {
+  padding-right: 10px;
+}
+
+.pc-menu ul li:hover {
+  border-bottom: solid 3px pink;
+}
+
+@media screen and (max-width: 959px) {
+  .pc-menu {
+    display: none;
+  }
+}
+
+.sp-nav {
+  background-color: #F067A6;
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  z-index: 90;
+}
+
+.sp-nav ul {
+  padding-right: 20px;
+}
+
+.sp-nav ul li {
+  display: block;
+  color: white;
+  width: 20%;
+  margin: 10px 40px 10px auto;
+  font-size: 1.8rem;
+  line-height: 3.8rem;
+}
+
+.sp-nav ul li:hover {
+  border-bottom: solid 3px pink;
+}
+
+.hum {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  .hum {
+    display: flex;
+    flex-direction: column;
+  }
+  .hum__long {
+    display: inline-block;
+    border-top: solid 2px white;
+    width: 16px;
+    padding-top: 10px;
+  }
+  .hum__short {
+    display: inline-block;
+    border-top: solid 2px white;
+    width: 14px;
+  }
+}
+
+.i-catch {
+  width: 100%;
+  background-image: url(../img/top.jpg);
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+
+.i-catch___text {
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-shadow: 1px 2px 3px #808080;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 959px) {
+  .i-catch___text {
+    font-size: 4rem;
+  }
+}
+
+.i-catch___text span {
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 959px) {
+  .i-catch___text span {
+    font-size: 5rem;
+  }
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.about___text {
+  width: 45%;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about___text p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .about___text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .about___text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.about___img {
+  width: 45%;
+  overflow: hidden;
+}
+
+.about___img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .about___img {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .about___img {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.work___item {
+  width: 30%;
+}
+
+.work___item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 959px) {
+  .work___item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .work___item {
+    width: 100%;
+  }
+}
+
+.work___item___CV, .work___item___sanyu {
+  overflow: hidden;
+}
+
+.work___item___CV a :hover, .work___item___sanyu a :hover {
+  opacity: 0.6;
+  transform: scale(1.3, 1.3);
+  transition: 1s all;
+}
+
+.work___item___CV img, .work___item___sanyu img {
+  width: 100%;
+  transition: 1s all;
+}
+
+.work___item___text {
+  padding: 30px 0;
+  font-size: 1.8rem;
+}
+
+.link {
+  border-top: solid 1px gray;
+  border-bottom: solid 1px gray;
+  padding: 8px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.link :hover {
+  border-bottom: solid 3px #F067A6;
+  opacity: 0.6;
+}
+
+#study {
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+.study-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+  margin: 30px auto;
+}
+
+.study-item {
+  background-color: white;
+  width: 29%;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #808080;
+}
+
+.study-item p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 959px) {
+  .study-item {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .study-item {
+    width: 90%;
+  }
+}
+
+.study-item i {
+  text-align: center;
+  font-size: 120px;
+  align-items: center;
+  display: block;
+}
+
+.study-item___text {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.comment-cover {
+  padding: 20px;
+  margin: 2em 0;
+  color: #5d627b;
+  background: white;
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.comment-cover p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#comment {
+  padding-bottom: 100px;
+}
+
+footer {
+  background-color: #F067A6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  width: 100%;
+}
+
+footer .logo {
+  font-size: 6rem;
+  font-family: 'Brush Script MT',YuGothic,'Yu Gothic','ＭＳ ゴシック',sans-serif;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+}
+
+footer ul li {
+  font-size: 1.5rem;
+  padding-left: 10px;
+}

@@ -1,0 +1,98 @@
+header{
+    position: fixed;
+    background-color: $menu-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $font-color;
+    text-shadow: 1px 2px 3px $shadow;
+    width: 100%;
+    z-index: 100;
+    padding: 0 40px;
+}
+
+h1{
+    font-family: 'Brush Script MT',YuGothic,'Yu Gothic','ＭＳ ゴシック',sans-serif;
+    font-size: 5rem;
+    padding: 10px;
+}
+
+.pc-menu{
+
+    ul{
+        display: flex;
+        align-items: center;
+        font-size: 4.5rem;
+
+        li{
+            padding-right: 10px;
+            &:hover{
+                
+                border-bottom :solid 3px $active;
+    
+                }
+        }
+
+    }
+
+    @include tab{
+        display: none;
+    }
+    
+
+}
+
+.sp-nav{
+    background-color:$menu-color;
+    display: none;  
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    z-index: 90;
+
+    ul{
+        padding-right: 20px;
+        li{
+            display: block;
+            color: $font-color;
+            width: 20%;
+            margin: 10px 40px 10px auto;
+            font-size: 1.8rem;
+            line-height: 3.8rem;
+
+            &:hover{
+                
+            border-bottom :solid 3px $active;
+
+            }
+}
+    }
+}
+
+.hum{
+    display: none;
+    @include tab{
+
+        display: flex;
+        flex-direction: column;
+        &__long{
+            display: inline-block;
+            border-top :solid 2px white;
+            width: 16px;
+            padding-top: 10px;
+    
+            
+        }
+        &__short{
+            display: inline-block;
+            border-top :solid 2px white;
+            width: 14px;
+            
+        }
+    }
+}
+
+
+ 

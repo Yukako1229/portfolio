@@ -1,0 +1,47 @@
+#study{
+    width: 100%;
+    background-color:#e6e6e6;
+}
+.study-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 30px auto ;
+    
+    
+}
+
+.study-item{
+    background-color: white;
+    width: 29%;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px $shadow;
+
+    p{
+        font-size: $font-size;
+    }
+
+    @include tab{
+        width: 40%;
+    }
+
+    @include sp{
+    width: 90%;
+    }
+
+    i {
+        text-align: center;
+        font-size: 120px;
+        align-items: center;
+        display: block;
+    }
+
+    &___text{
+        padding-top: 20px;
+        text-align: center;
+
+    }
+}

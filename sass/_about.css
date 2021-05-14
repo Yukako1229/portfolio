@@ -1,0 +1,15 @@
+.about {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.about___text {
+  width: 45%;
+}
+
+.about___img {
+  width: 45%;
+}

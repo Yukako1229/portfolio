@@ -1,0 +1,24 @@
+footer{
+    background-color: $menu-color;
+    color: $font-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 100%;
+    
+    .logo{
+        font-size: 6rem;
+        font-family: 'Brush Script MT',YuGothic,'Yu Gothic','ＭＳ ゴシック',sans-serif;
+       
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        li{
+            font-size: 1.5rem;
+            padding-left: 10px;
+            
+        }
+    }
+}
